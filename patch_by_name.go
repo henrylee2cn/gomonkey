@@ -35,3 +35,11 @@ func (this *Patches) ApplyFuncByDoubleName(target interface{}, doubleSymtabName 
 	d = reflect.ValueOf(d.Elem().Interface())
 	return this.ApplyCore(t, d)
 }
+
+func ApplyMethodByTargetName(targetSymtabName string, double interface{}) *Patches {
+	return ApplyFuncByTargetName(targetSymtabName, double)
+}
+
+func (this *Patches) ApplyMethodByTargetName(targetSymtabName string, double interface{}) *Patches {
+	return this.ApplyFuncByTargetName(targetSymtabName, double)
+}
