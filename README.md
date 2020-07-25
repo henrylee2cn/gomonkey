@@ -6,6 +6,8 @@ gomonkey is a library to make monkey patching in unit tests easy.
 
 + support a patch for a function
 + support a patch for a member method
++ support a patch for a function by symtab name
++ support a patch for a member method by symtab name
 + support a patch for a interface
 + support a patch for a function variable
 + support a patch for a global variable
